@@ -37,6 +37,12 @@ The plugin supports the following options:
 Create a [Modernizr](https://github.com/Modernizr/Modernizr) config JSON file and name it `modernizr.json` or anything ending in `.modernizr.json` or `modernizrrc`. Import it in a JavaScript file:
 
 ```javascript
+import Modernizr from './modernizr.json'
+```
+
+or if you have set the `global: true` option, you can probably simply use:
+
+```javascript
 import './modernizr.json'
 ```
 
