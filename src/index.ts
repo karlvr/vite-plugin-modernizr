@@ -14,7 +14,11 @@ interface Config {
 	global: boolean
 }
 
-export default function modernizrPlugin(pluginConfig: Config): Plugin {
+const defaultConfig: Config = {
+	global: false,
+}
+
+export default function modernizrPlugin(pluginConfig: Config = defaultConfig): Plugin {
 	return {
 		name: 'vite-plugin-modernizr',
 		enforce: 'pre',
